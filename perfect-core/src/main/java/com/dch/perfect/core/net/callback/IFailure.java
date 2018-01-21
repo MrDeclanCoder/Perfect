@@ -5,4 +5,6 @@ package com.dch.perfect.core.net.callback;
  */
 
 public interface IFailure {
+
+    void onFailure();
 }

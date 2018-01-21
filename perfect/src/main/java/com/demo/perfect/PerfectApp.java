@@ -18,7 +18,7 @@ public class PerfectApp extends Application {
         Perfect.init(getApplicationContext())
                 .withIcon(new FontAwesomeModule())
                 .withIcon(new FontEcModule())
-                .withApiHost("http://www.demo.com")
+                .withApiHost("https://www.baidu.com")
                 .configure();
     }
 }
