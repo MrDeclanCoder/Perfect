@@ -1,0 +1,1 @@
+include ':perfect', ':perfect-annotations', ':perfect-compiler', ':perfect-core', ':perfect-ec', ':perfect-ui'

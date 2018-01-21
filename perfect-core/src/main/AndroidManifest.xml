@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dch.perfect.core">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<!--
+    <application
+        tools:replace="label,allowBackup"
+        android:allowBackup="true"
+        android:label="Perfect"
+        android:supportsRtl="true" />
+-->
+
+</manifest>
