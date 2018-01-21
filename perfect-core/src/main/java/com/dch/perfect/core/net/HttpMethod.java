@@ -7,8 +7,10 @@ package com.dch.perfect.core.net;
 public enum HttpMethod {
     GET,
     POST,
+    POST_RAW,
     DOWNLOAD,
     UPLOAD,
     PUT,
+    PUT_RAW,
     DELETE
 }
