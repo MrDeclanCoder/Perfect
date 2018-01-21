@@ -42,14 +42,7 @@ public class RequestCallback implements Callback{
                 ERROR.onError(response.code(),response.message());
             }
         }
-        if (LOADER_STYLE != null){
-            HANDLER.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    PerfectLoader.stopLoading();
-                }
-            },1000);
-        }
+        stopLoading();
     }
 
     @Override
@@ -59,6 +52,18 @@ public class RequestCallback implements Callback{
         }
         if (REQUEST != null){
             REQUEST.onRequestEnd();
+        }
+        stopLoading();
+    }
+
+    private void stopLoading(){
+        if (LOADER_STYLE != null){
+            HANDLER.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    PerfectLoader.stopLoading();
+                }
+            },1000);
         }
     }
 }
