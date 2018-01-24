@@ -54,7 +54,7 @@ public class BaseMvpProxy<V extends BaseMvpView, P extends BaseMvpPresenter<V>> 
      * @return 指定类型的Presenter
      */
     @Override
-    public BaseMvpPresenter getMvpPresenter() {
+    public P getMvpPresenter() {
         if (mFactory != null) {
             if (mPresenter == null) {
                 mPresenter = mFactory.createMvpPresenter();

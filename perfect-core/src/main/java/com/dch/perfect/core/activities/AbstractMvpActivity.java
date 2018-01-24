@@ -79,6 +79,6 @@ public abstract class AbstractMvpActivity<V extends BaseMvpView,P extends BaseMv
 
     @Override
     public P getMvpPresenter() {
-        return (P) mProxy.getMvpPresenter();
+        return mProxy.getMvpPresenter();
     }
 }
